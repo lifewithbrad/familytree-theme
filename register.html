@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Family Registration</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="register-page">
+    <nav class="nav">
+      <div class="overlay"></div>
+    <div class="nav">
+           <a href="index.html">Home</a>
+      <a href="tree.html">Family Tree</a>
+      <a href="news.html">News</a>
+      <a href="register.html">Register</a>
+      <a href="donate.html">Donate</a>
+  </nav>
+  <div class="form-container">
+    <h1>Family Registration Form</h1>
+    <form action="#" method="POST">
+
+      <!-- Respondent Info -->
+      <h2>Respondent</h2>
+      <label for="respondentName">Your Full Name:</label>
+      <input type="text" id="respondentName" name="respondentName" required>
+
+      <label for="respondentAge">Your Age:</label>
+      <input type="number" id="respondentAge" name="respondentAge" required>
+
+      <!-- Spouse -->
+      <label for="spouseName">Spouse's Name (optional):</label>
+      <input type="text" id="spouseName" name="spouseName">
+
+      <label for="spouseAge">Spouse's Age (optional):</label>
+      <input type="number" id="spouseAge" name="spouseAge">
+
+      <!-- Children -->
+      <label for="childrenNames">Children's Names and Ages (optional):</label>
+      <textarea id="childrenNames" name="childrenNames" placeholder="e.g. John - 10, Jane - 8"></textarea>
+
+      <!-- Parents -->
+      <h2>Parents</h2>
+      <label for="fatherName">Father's Name:</label>
+      <input type="text" id="fatherName" name="fatherName" required>
+
+      <label for="motherName">Mother's Name:</label>
+      <input type="text" id="motherName" name="motherName" required>
+
+      <!-- Siblings -->
+      <h2>Siblings</h2>
+      <label for="sisterNames">Sister(s) Name(s) (optional):</label>
+      <textarea id="sisterNames" name="sisterNames" placeholder="Separate names with commas"></textarea>
+
+      <label for="brotherNames">Brother(s) Name(s) (optional):</label>
+      <textarea id="brotherNames" name="brotherNames" placeholder="Separate names with commas"></textarea>
+
+      <!-- Grandparents -->
+      <h2>Grandparents</h2>
+      <label for="grandfatherName">Grandfather's Name:</label>
+      <input type="text" id="grandfatherName" name="grandfatherName" required>
+
+      <label for="grandmotherName">Grandmother's Name:</label>
+      <input type="text" id="grandmotherName" name="grandmotherName" required>
+
+      <!-- Submit -->
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+</body>
+</html>

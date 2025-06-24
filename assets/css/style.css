@@ -1,0 +1,213 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: url("../images/jesusandislanders.png") no-repeat center center / cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.content h1 {
+  font-family: 'bubblegum sans';
+  font-size: 4em;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.content p {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+/* Consistent Navigation - Top Left */
+/* Consistent Navigation - Top Left */
+.nav {
+  position: absolute;
+  white-space: nowrap;
+  top: 20px;
+  right: 30px;
+  z-index: 10;
+  display: flex;
+  gap: 10px; /* spacing between links */
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1rem;
+  padding: 8px 12px;
+  background-color: transparent;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: rgba(170, 161, 161, 0.7);
+}
+
+
+
+/* form section for registration */
+
+.form-container {
+  margin-top: 120px; /* pushes form down */
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  max-width: 600px;
+  width: 90%;
+}
+
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.form-container input,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Register page background image */
+body.register-page {
+  background: url("../images/register.png") no-repeat center center / cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+
+}
+
+
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  max-width: 600px;
+  width: 90%;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* News Page */
+
+/* News Page Styles */
+/* News Page Flex Layout */
+  body.news-page {
+  background: url("../images/announcementbackground2.png") no-repeat  top;
+  background-size: cover;
+ 
+
+}
+.news-container {
+  max-width: 1000px;
+  margin: 120px auto;
+  padding: 30px;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.news-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.news-flex {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.news-featured {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-featured img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.news-featured h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.news-latest {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-post h3 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.news-post p {
+  margin: 0;
+  color: #333;
+}
